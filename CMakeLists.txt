@@ -14,3 +14,5 @@ CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/config.h.in ${CMAKE_CURRENT_BINARY_DI
 
 add_library(memif SHARED socket.h memif_private.h memif.h libmemif.h main.c socket.c)
 
+install(TARGETS memif DESTINATION lib)
+install(FILES libmemif.h DESTINATION include)
