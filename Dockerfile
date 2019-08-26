@@ -8,3 +8,4 @@ WORKDIR /app
 
 RUN cmake .
 RUN make
+RUN make install
